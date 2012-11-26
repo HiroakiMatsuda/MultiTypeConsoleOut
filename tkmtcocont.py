@@ -48,7 +48,6 @@ class TkController():
 
         icon_list = []
         icon_list.append(conf.get('ICON', 'write'))
-        icon_list.append(conf.get('ICON', 'write_file'))
 
         return icon_list
 
@@ -70,6 +69,6 @@ class TkController():
         self.set_comp_filename = func
 
 if __name__ == '__main__':
-    import tkcontroller
-    tkcont = tkcontroller.TkController()
-    tkcont.root.mainloop()
+    import tkmtcocont
+    tk = tkmtcocont.TkController()
+    tk.root.mainloop()
